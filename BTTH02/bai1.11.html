@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Tạo form và các điều khiển trên form</title>
+	<style>
+        h2 {
+            text-align: center;
+            color: #be4b3c;
+        }
+
+        table,
+        th,
+        td {
+        	border: 1px solid black;
+            background-color: #91f5e7;
+            border-collapse: collapse;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Đăng Nhập</h2>
+    <form action="" id="f">
+        <table align="center">
+            <tr>
+                <td>Mã người dùng:</td>
+                <td>
+                    <input id="usr" type="text-box">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Mật khẩu:</td>
+
+                <td>
+                    <input type="password">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input id="click" type="button" value="Đồng ý" onclick="myfunction()">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center" id="user">
+                </td>
+                <script>
+                    function myfunction(){
+                        document.getElementById('user').innerHTML = document.getElementById('usr').value;
+                    }
+                </script>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
