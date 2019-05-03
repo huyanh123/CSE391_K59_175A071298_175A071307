@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Tạo form và các điều khiển</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center" style="color: blue">Đăng kí du lịch</h2>
+    <form action="" id="dangki" >
+        <table align="center" style="border: #5DADE2  " >
+            <tr>
+                <td style="background:#F7DC6F ;color:#5DADE2     ">Họ và tên</td>
+                <td  style="background:#F7DC6F   ">
+                <input id="name" type="text-box"></td>
+            </tr>
+            <tr>
+                <td  style="background:#F7DC6F;color: #5DADE2    ">Địa chỉ</td>
+                <td style="background:#F7DC6F  ">
+                <input id="address" type="text"></td>
+            </tr>
+            <tr>
+                <td  style="background:#F7DC6F;color: #5DADE2    ">Điện thoại</td>
+                <td style="background:#F7DC6F  "><input id="telephone" type="text"></td>
+            </tr>
+            <tr>
+                <td  style="background:#F7DC6F ;color: #5DADE2   ">Khách Việt Nam</td>
+                <td  style="background:#F7DC6F  ">
+                    <input type="checkbox" name="customer" value="vietnamese">
+                </td>
+            </tr>
+            <tr>
+                <td  style="background:#F7DC6F ;color: #5DADE2   ">Chọn tour</td>
+                <td  style="background:#F7DC6F  ">
+                    <select>
+                        <optgroup label="Miền Bắc">
+                            <option value="">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="">Nha Trang - Đà Lạt</option>
+                            <option value="">Buôn mê thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                    <optgroup>
+                        <option value=""></option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="background:#F7DC6F ;color: #5DADE2   " >Chọn phương tiện</td>
+                <td  style="background:#F7DC6F  ">
+					<input type="radio" name="Vehicle" value="Oto">Oto
+					<input type="radio" name="Vehicle" value="Máy bay">Máy Bay
+                </td>
+            </tr>
+            <tr>
+                    <td align="center" style="background:#F7DC6F  ;color: #5DADE2  " colspan="2">
+                        <fieldset style="border:1; width: 350px; height: 55px;">
+                            <legend style="color: ">Số lượng đoàn khách</legend>
+                                <div align="center">
+                                    Người lớn: <input style="width: 50px" type="text">
+                                    Trẻ em: <input style="width: 50px" type="text">
+                                </div>
+                        </fieldset>
+                    </td>
+                </tr> 
+                <!-- số lượng-->
+                <tr>
+                    <td  style="background:#F7DC6F  ">Ghi chú thêm</td>
+                    <td  style="background:#F7DC6F  ">
+                        <textarea id="ghichu" style="width: 300px"></textarea>
+                    </td>
+                <tr>
+                    <td align="center" style="background:#F7DC6F  " colspan="2"><input type="button" onclick="success()" id="send" value="Dong y"></td>
+                    
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function success() {
+            document.getElementById("notification").innerText = "Ban da dang ki thanh cong";
+        }
+    </script>
+        </table>
+    </form>
+</body>
+
+</html>
